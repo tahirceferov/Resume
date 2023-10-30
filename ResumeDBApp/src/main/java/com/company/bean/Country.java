@@ -1,17 +1,17 @@
 package com.company.bean;
 
-public class Nationality {
+public class Country {
     private int id;
     private String name;
-    private String countryName;
+    private String nationality;
 
-    public Nationality() {
+    public Country() {
     }
 
-    public Nationality(int id, String name, String countryName) {
+    public Country(int id, String name, String nationality) {
         this.id = id;
         this.name = name;
-        this.countryName = countryName;
+        this.nationality = nationality;
     }
 
     public int getId() {
@@ -30,12 +30,12 @@ public class Nationality {
         this.name = name;
     }
 
-    public String getCountryName() {
-        return countryName;
+    public String getNationality() {
+        return nationality;
     }
 
-    public void setCountryName(String countryName) {
-        this.countryName = countryName;
+    public void setCountryName(String nationality) {
+        this.nationality = nationality;
     }
 
     @Override
@@ -43,7 +43,7 @@ public class Nationality {
         return "Nationality{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", countryName='" + countryName + '\'' +
+                ", nationality='" + nationality + '\'' +
                 '}';
     }
 }
